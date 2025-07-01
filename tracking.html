@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Bus Tracking - SL Bus System</title>
+    <link rel="stylesheet" href="style.css" />
+    <!-- Leaflet CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.3/dist/leaflet.css" crossorigin="" />
+    <style>
+        /* Override or add tracking specific styles */
+        #map {
+            height: 600px;
+            max-width: 900px;
+            margin: 2rem auto;
+            border: 2px solid #004d99;
+            border-radius: 8px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="nav-container">
+            <h1>SL Bus System</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="timetable.html">Time Table & Tickets</a></li>
+                    <li><a href="booking.html">E-Ticket and Booking</a></li>
+                    <li><a href="tracking.html" class="active">Bus Tracking System</a></li>
+                    <li><a href="about.html">About</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <h2 style="text-align:center; margin-top:1rem;">Live Bus Radar - Sri Lanka</h2>
+        <div id="map"></div>
+    </main>
+
+    <!-- Leaflet JS -->
+    <script src="https://unpkg.com/leaflet@1.9.3/dist/leaflet.js" crossorigin=""></script>
+    <script src="maps.js"></script>
+</body>
+
+</html>

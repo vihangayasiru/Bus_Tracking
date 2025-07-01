@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Time Table & Tickets</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <div class="nav-container">
+      <h1>SL Bus System</h1>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="timetable.html">Time Table & Tickets</a></li>
+          <li><a href="booking.html">E-Ticket and Booking</a></li>
+          <li><a href="tracking.html">Bus Tracking System</a></li>
+          <li><a href="about.html">About</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <main>
+    <h2>Check Bus Timetable</h2>
+    <select id="timetableSelect">
+      <option value="">--Select Route--</option>
+      <option value="colombo-kandy">Colombo - Kandy</option>
+      <option value="colombo-galle">Colombo - Galle</option>
+    </select>
+    <button id="showTimetableBtn">Show Timetable</button>
+
+    <div id="timetableContainer"></div>
+
+    <h2>Check Ticket Prices</h2>
+    <select id="priceSelect">
+      <option value="">--Select Route--</option>
+      <option value="colombo-kandy">Colombo - Kandy</option>
+      <option value="colombo-galle">Colombo - Galle</option>
+    </select>
+    <button id="showPriceBtn">Show Ticket Price</button>
+
+    <div id="priceContainer"></div>
+  </main>
+  <script src="timetable.js"></script>
+</body>
+</html>
